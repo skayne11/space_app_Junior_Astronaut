@@ -1,28 +1,61 @@
-# 🌶️ Chili on Mars
+## Le Piment de Mars (The Martian Chili Pepper)
 
-An educational game for ages 7–12: grow a chili pepper in the greenhouse of a Mars base, one choice at a time. The solar flares, the weather and the science facts come from real NASA data.
+### What exactly does it do?
 
-**Play online:** `https://<your-account>.github.io/<repo-name>/` (replace after the first deployment)
+*Le Piment de Mars* is a browser game for kids aged 7 to 12. The player runs a small greenhouse on a Martian outpost and has one mission: grow a chili pepper from seed to ripe fruit in 7 sols (Martian days), while keeping a crew of three astronauts alive.
 
-## How it works
+To succeed, the player must balance the same competing demands NASA mission planners deal with:
+- **Life support:** oxygen and water for the crew and the plant.
+- **Limited power:** the energy must be shared between grow lights, heating and the oxygen machine.
+- **Radiation protection:** during solar flares, the crew goes to the shelter and the greenhouse shutter is closed, which also blocks the sunlight the plant needs.
+- **Food production:** the plant itself.
 
-- **Levels made of choices.** Houston or Commander Léa describe a situation, you answer **Yes** or **No**, and the base shows the consequence (watered plant, frost, radiation…).
-- **Level 1 · First sol** is a short tutorial: *Are you ready? → Water the plant? → Open the door on a freezing night? → Let Léa stay outside during a flare?* No energy or resource management yet.
-- **Level 2 · Storm season** (unlocked by finishing level 1): choose a seed (radish or red lettuce, the two easiest real crops: the radish resists the cold, the lettuce loses a heart on a freezing night), avoid overwatering, pick what the lab researches, then get through a freezing night, a dust storm, dirty solar panels and a solar flare (shutter + shelter). Choices chain together: the seed changes how the cold hurts, the research gives reports later, the battery decides if the shutter can close. The plant can die.
-- **Level 3 · Random mission** (unlocked by finishing level 2): first pick a **real crop** that has been grown in space or in Mars-like conditions: radish, red lettuce (★, 6 sols), potato (★★, 8 sols), dwarf tomato (★★, 9 sols), dwarf wheat (★★★, 10 sols) or chili pepper (★★★, 12 sols). The crop sets the difficulty: mission length (6 sols minimum, one event per sol), how often dangers happen, cold resistance (cool-weather crops vs. tomato/chili) and whether flowers must be pollinated. Events are drawn at random each sol (water, overwatering, cold night, dust storm, dusty panels, solar flare, mold, pollination, broken recycler, oxygen, grow lamps, dusty spacesuit, workout, lab research), each question is randomly asked one way or the other, and each answer is followed by a "Why?" fact that explains it. Facts not seen yet are drawn first. **Research:** the lab offers two projects out of six pieces of equipment (weather station, solar telescope, moisture sensor, air fan, regolith shield, mini nuclear reactor). Each takes 1 to 3 sols to build: a building site with a progress bar appears on the base and Sam works on it, then the equipment is drawn on the base and changes the rest of the mission (forecasts, flare warnings, soil readings, no more mold, no shutter needed, extra power). Each sol's event is drawn when the player reaches it, so it can depend on what is already built. **Solar conjunction:** on sol 2 or 3, Houston announces that the Sun will be between Earth and Mars (it happens about every 26 months): no contact for about two weeks (14 sols, like the real thing), so it lasts until the end of the mission. If the player downloads Houston's plan before the blackout, every later event shows a piece of advice; otherwise the crew is on its own. The radio dish on the lab roof shows "NO SIGNAL" during the blackout. Simulated: a perfect player never loses the plant; random answers lose it ~13% of the time with a radish and ~80% with a chili.
-- **Space cards**: 17 collectible cards with a photo, a fun fact and a definition, in 4 decks (Planet Mars, Sun & space, Life & energy, Explorers). Some are earned with your choices, others hide in the scene (tap what sparkles ✨: the Sun, the shelter, the radio dish, a rover on the hills, a helicopter in the sky…). Cards are saved in the browser.
+Every choice has a cost, and the plant visibly grows, thrives, wilts or dies depending on what the player decides.
 
-## Running the game locally
+### How does it work?
 
-JavaScript modules need a small server (opening `index.html` directly does not work):
+- **Plan, then act.** Each sol starts with a paused "dawn" phase. The player reads the forecasts, assigns astronauts to tasks and switches systems on or off. Then the sol plays out in real time for one minute: needs appear, machines break down, dust covers the solar panels, and real solar events strike.
+- **Information is earned.** Working in the lab produces science points, used to build instruments: a weather station, a solar telescope and a soil moisture sensor. Once installed, they reveal information directly in the scene. The telescope shows sunspots before a flare, the giant thermometer turns blue before a freezing night, and a green "ideal zone" appears on the transparent pot. The instruments collect dust and must be cleaned, so gathering information is itself a trade-off.
+- **Visual feedback instead of text.** Glowing power cables show where the energy goes. The transparent pot shows the water level and the roots. Icons, highlights and sounds (a water drop, an alarm siren, radio static from Houston) guide the player without long sentences.
+- **Real events, real science.** Solar events in the game are real events recorded in NASA's DONKI database, such as the X9.0 flare of 3 October 2024 and the CMEs of May 2024. When one happens, an event card briefly pauses the game, shows the real date and the source, and adds a fact to a collectible logbook.
+- **Learning that sticks.** The logbook (*Carnet de bord*) collects verified NASA facts across five themes: the Sun and radiation, Martian weather, plants in space, water and air, and energy. Each theme levels up from Bronze to Silver, Gold and Platinum.
+- **A new mechanic each sol** (water, then dust, night and cold, solar storms, breakdowns and mold), so the game teaches itself step by step.
+- **Replayability.** The player chooses a pepper variety (fast but fragile, balanced, or cold-resistant), and events are randomized from one game to the next.
 
-```bash
-npm start            # opens http://localhost:5173
-# or, without Node:
-python3 -m http.server 5173
-```
+### What benefits does it have?
 
-No dependencies to install, no build step.
+- **It makes real engineering trade-offs tangible.** Kids feel why closing the shutter protects the plant but slows its growth, or why lighting the greenhouse at night drains the battery.
+- **It is grounded in real NASA data**, not invented statistics, and every source is cited inside the game and in the repository's `SOURCES.md`.
+- **No barrier to entry.** It runs in any modern browser, on a computer or a tablet, with no download, no account and no install.
+- **It teaches failure without punishment.** When the plant dies, the game explains the main cause (thirst, too much water, cold, mold or radiation) and how to avoid it next time.
+- **It is easy to use in a classroom.** A game lasts about 7 minutes and the interface relies on icons rather than reading.
+
+### What do you hope to achieve?
+
+We want children to leave the game understanding at least one real constraint of deep-space survival. For example: on Mars, energy, water and safety are always shared; there are no bees, so astronauts pollinate plants by hand; and solar storms can arrive with almost no warning.
+
+We also want to show how space scientists work: they observe, forecast and prepare. The game rewards a player who gathers information before acting, which is exactly how NASA uses space weather data to protect missions. Finally, we hope it sparks curiosity about the real missions and experiments behind each fact: Veggie, Plant Habitat-04, Curiosity, Perseverance and DONKI.
+
+### What tools, coding languages, hardware, or software did you use?
+
+- **Languages:** HTML5, CSS3 and JavaScript (ES modules, no framework). Data is stored as JSON.
+- **Browser technologies:** Canvas 2D for the animated scene, the Web Audio API for sounds generated in code (no audio files), and localStorage to keep the logbook between games.
+- **NASA data:**
+  - DONKI (Space Weather Database), through the NASA Open APIs at api.nasa.gov.
+  - Facts from the Open Science Data Repository (OSDR).
+  - Facts from ISS plant experiments (Veggie, Plant Habitat-04, Advanced Plant Habitat).
+  - Facts from Mars surface missions: Curiosity RAD, the REMS and MEDA weather stations, Opportunity and InSight.
+- **Tooling (Node.js):**
+  - A script that fetches recent events from the DONKI API.
+  - An automated balance simulator that plays hundreds of games with different strategies to tune the difficulty.
+- **Hosting and workflow:** Git and GitHub, with automatic deployment to GitHub Pages through GitHub Actions. An optional daily action refreshes the DONKI data.
+- **AI assistance:** Claude (Anthropic) was used for brainstorming, prototyping and code structure.
+- **Hardware:** no special hardware. The game runs on any device with a modern web browser.
+
+**Play it:** [https://skayne11.github.io/space_app_Junior_Astronaut/]
+
+---
+
 
 ## Structure
 
@@ -42,23 +75,3 @@ data/
 assets/cards/             photos of the 17 space cards
   events.json             real solar events (kept for future levels)
 ```
-
-**Adding a level:** add an entry to `LEVELS` in `src/levels.js` (the comment at the top of the file lists every field). Each step has a `time` of day, a speaker, a question, and either `yes` / `no` or two named `options`. Keep two choices per question, and vary the wording so that the right answer is sometimes "No" (Yes and No buttons share the same neutral colour). Answers have `fx` (scene change), `say` (feedback), `good` (counts for the stars) and `card` (logbook reward); `say` and `good` can be functions of the state, for consequences that depend on earlier choices. Progress (unlocked levels, best stars) is saved in the browser.
-
-## Useful commands
-
-| Command | Purpose |
-|---|---|
-| `npm start` | Local server |
-
-## Publishing to GitHub Pages
-
-1. Push the repository to GitHub (`main` branch).
-2. In **Settings → Pages**, choose **Source: GitHub Actions**.
-3. Every push republishes the game automatically.
-
-## Next steps
-
-- [ ] Check every date and every fact (see [SOURCES.md](SOURCES.md)).
-- [ ] Level 2 and beyond (energy, more events).
-- [ ] Have kids play level 1 and adjust the texts.
