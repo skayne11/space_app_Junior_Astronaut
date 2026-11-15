@@ -1,0 +1,13 @@
+{
+  "name": "chili-on-mars",
+  "version": "1.0.0",
+  "description": "Educational game for ages 7-12: grow a chili pepper on Mars, one choice at a time, with real NASA facts.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve@14.2.4 -l 5173 ."
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

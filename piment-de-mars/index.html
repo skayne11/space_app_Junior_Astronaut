@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chili on Mars</title>
+  <meta name="description" content="Educational game: grow a chili pepper on Mars, one choice at a time, and collect real NASA facts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="box topbar">
+      <div class="brand">
+        <h1>Chili <span>on Mars</span></h1>
+        <span class="lvl" id="lvlName">Level 1</span>
+        <nav class="lvlpick" id="lvlPick" aria-label="Levels"></nav>
+      </div>
+      <ol class="steps" id="steps" aria-label="Steps of the level"></ol>
+      <div class="tools">
+        <button class="ibtn" id="logbookBtn" type="button">📖 Logbook <b id="cardCount">0/20</b></button>
+        <button class="ibtn" id="soundBtn" type="button" aria-label="Mute sound">🔊</button>
+        <button class="ibtn" id="helpBtn" type="button" aria-label="How to play">❔</button>
+        <button class="ibtn" id="resetBtn" type="button" aria-label="Reset all progress" title="Reset all progress">↺</button>
+      </div>
+    </header>
+
+    <div class="main">
+      <section class="box stage" aria-label="Your Mars base">
+        <div class="scene" id="scene"></div>
+        <div class="status" id="status" aria-live="polite"></div>
+      </section>
+      <section class="box talk" id="talk" aria-live="polite"></section>
+    </div>
+
+    <section class="box logbox" aria-label="Logbook">
+      <h2>Logbook <span class="muted sub">· your space cards — tap a deck</span></h2>
+      <div class="logbook" id="logbook"></div>
+    </section>
+  </div>
+
+  <div class="overlay" id="overlay" hidden><div class="card" id="card" role="dialog" aria-modal="true"></div></div>
+  <div class="reveal" id="reveal" hidden></div>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

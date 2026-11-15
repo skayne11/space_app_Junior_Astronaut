@@ -1,0 +1,228 @@
+{
+  "decks": [
+    {
+      "id": "mars",
+      "name": "Planet Mars",
+      "icon": "🔴",
+      "color": "#d2552b",
+      "cards": [
+        "mars",
+        "temperature",
+        "sandstorm",
+        "magnetic_shield"
+      ]
+    },
+    {
+      "id": "space",
+      "name": "Sun & space",
+      "icon": "☀️",
+      "color": "#e0a100",
+      "cards": [
+        "solar_system",
+        "solar_flare",
+        "radiation",
+        "communication"
+      ]
+    },
+    {
+      "id": "life",
+      "name": "Life & energy",
+      "icon": "⚡",
+      "color": "#2f9a4c",
+      "cards": [
+        "energy",
+        "solar_energy",
+        "oxygen",
+        "water"
+      ]
+    },
+    {
+      "id": "explore",
+      "name": "Explorers",
+      "icon": "🚀",
+      "color": "#3b62d6",
+      "cards": [
+        "perseverance",
+        "curiosity",
+        "ingenuity",
+        "astronaut",
+        "laboratory"
+      ]
+    }
+  ],
+  "cards": {
+    "mars": {
+      "name": "Mars",
+      "type": "Red planet",
+      "funFact": "The two moons of Mars are named Phobos and Deimos. Mars is the second smallest planet in the Solar System.",
+      "description": "Mars is the 4th planet from the sun. It is a terrestrial planet which means that it has a hard rocky surface that you could walk on. Mars' surface is dry and much of it is covered with a reddish dust and rocks.",
+      "image": "assets/cards/mars.jpg",
+      "fit": "contain",
+      "bg": "#000",
+      "how": "Start your first mission"
+    },
+    "temperature": {
+      "name": "Average temperature",
+      "type": "Climate",
+      "funFact": "Some scientists believe that Mars was once covered with water.",
+      "description": "Temperatures on Mars range from –143°C to +20°C (–63°C on average at the equator). This is because it’s further from the Sun than Earth is: 228 million kilometres away, versus 150 million kilometres for the Earth–Sun distance.",
+      "image": "assets/cards/temperature.jpg",
+      "fit": "contain",
+      "bg": "#fff",
+      "how": "Live through a freezing night… or tap the thermometer"
+    },
+    "energy": {
+      "name": "Energy",
+      "type": "Power",
+      "funFact": "The entire world could be powered for a year from the energy from the sun that falls on the Earth's surface in one hour. We just need to figure out how to harness it!",
+      "description": "Energy helps things happen: it makes machines run, plants grow, and people move.",
+      "image": "assets/cards/energy.jpg",
+      "fit": "contain",
+      "bg": "#fff",
+      "how": "Save the battery… or tap it"
+    },
+    "oxygen": {
+      "name": "Oxygen",
+      "type": "Life",
+      "funFact": "In the solar system, only the Earth has a high percentage of oxygen.",
+      "description": "Oxygen (O₂) is an important element that is needed by most life forms on Earth to survive. It is used by animals and plants in the respiration (breathing) process.",
+      "image": "assets/cards/oxygen.jpg",
+      "fit": "contain",
+      "bg": "#fff",
+      "how": "Run the oxygen machine… or tap the recycler"
+    },
+    "water": {
+      "name": "Water",
+      "type": "Resource",
+      "funFact": "Seventy percent of a human's body is made up of water. It can change into ice when it's very cold and into steam when it's very hot ! ",
+      "description": "Water is a clear liquid that falls from the sky as rain and fills rivers, lakes, and oceans. Every living thing needs water to live, including people, animals, and plants !",
+      "image": "assets/cards/water.jpg",
+      "fit": "contain",
+      "bg": "#fff",
+      "how": "Water your plant"
+    },
+    "solar_energy": {
+      "name": "Solar Energy",
+      "type": "Power",
+      "funFact": "If only 4% of the world's deserts were covered in photovoltaic cells, they could supply all of the world's electricity.",
+      "description": "The primary source of all energy on planet Earth is from the sun. Solar power is power generated directly from sunlight.",
+      "image": "assets/cards/solar-energy.jpg",
+      "fit": "contain",
+      "bg": "#fff",
+      "how": "Clean the solar panels… or tap them"
+    },
+    "solar_flare": {
+      "name": "Solar Flare",
+      "type": "Sun",
+      "funFact": "Solar flares follow a cycle of approximately 11 years, known as the solar cycle.",
+      "description": "Sometimes areas of the Sun will suddenly appear much brighter. These bright spots are called solar flares. They are areas where a large amount of energy is released to the surface of the Sun.",
+      "image": "assets/cards/solar-flare.jpg",
+      "fit": "cover",
+      "bg": "#000",
+      "how": "Protect the greenhouse during a solar flare"
+    },
+    "sandstorm": {
+      "name": "Sandstorm",
+      "type": "Weather",
+      "funFact": "Sandstorms can occur with long gaps between them, sometimes with years passing between major events.",
+      "description": "Martian sandstorms are caused by strong winds lifting fine dust from the surface, amplified by seasonal heating and Mars’ thin atmosphere. This dust is an especially big problem for solar panels.",
+      "image": "assets/cards/sandstorm.jpg",
+      "fit": "cover",
+      "position": "60% 50%",
+      "bg": "#000",
+      "how": "Live through a dust storm"
+    },
+    "solar_system": {
+      "name": "Solar System",
+      "type": "Space",
+      "funFact": "Pluto was once considered a full planet, but was redefined as a dwarf planet in 2006. Scientists who study the solar system and outer space are called astronomers.",
+      "description": "The center of the Solar System is the Sun. The Solar System is made up of the Sun and all the planets, asteroids, and other objects that orbit the Sun. There are eight planets in our Solar System. Starting with the closest to the sun they are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+      "image": "assets/cards/solar-system.jpg",
+      "fit": "cover",
+      "bg": "#000",
+      "how": "Tap the Sun in the sky"
+    },
+    "communication": {
+      "name": "Space Communication",
+      "type": "Mars–Earth",
+      "funFact": "Every 26 months, Mars, the Sun, and Earth line up, and all communication with Earth is lost.",
+      "description": "We can have communication blackouts: interference from solar radiation can degrade the signal without fully blocking it, and disruption can occur when the sun or other planetary objects are directly between Earth and the spacecraft.",
+      "image": "assets/cards/hope.jpg",
+      "fit": "contain",
+      "bg": "#000",
+      "how": "Live through a solar conjunction… or tap the radio dish"
+    },
+    "perseverance": {
+      "name": "Perseverance",
+      "type": "Rover",
+      "funFact": "The Mars 2020 Perseverance Rover is searching for signs of ancient microbial life, to advance NASA's quest to explore the past habitability of Mars.",
+      "description": "Five years ago, the most advanced robotic explorer ever sent to the Red Planet landed, “safely on the surface of Mars, ready to begin seeking the signs of past life.”",
+      "image": "assets/cards/perseverance.jpg",
+      "fit": "cover",
+      "bg": "#000",
+      "how": "Find the rover hiding on the hills"
+    },
+    "curiosity": {
+      "name": "Curiosity",
+      "type": "Rover",
+      "funFact": "For more than 10 years, a robot called Curiosity has been exploring Mars. It has found clues to help us answer big questions about the red planet!",
+      "description": "Curiosity was the largest and most capable rover ever sent to Mars when it launched in 2011. Curiosity set out to answer the question: a long time ago, was Mars warm and wet enough for tiny living things to live there?",
+      "image": "assets/cards/curiosity.jpg",
+      "fit": "cover",
+      "position": "50% 55%",
+      "bg": "#000",
+      "how": "Build a weather station"
+    },
+    "ingenuity": {
+      "name": "Ingenuity",
+      "type": "Helicopter",
+      "funFact": "NASA's Ingenuity Mars Helicopter completed 72 historic flights since first taking to the skies above the Red Planet.",
+      "description": "A little helicopter called Ingenuity rode to Mars under a robot named Perseverance. On April 19, 2021, it flew in the sky of Mars! It was the first time a helicopter ever flew on another planet.",
+      "image": "assets/cards/ingenuity.jpg",
+      "fit": "cover",
+      "position": "50% 45%",
+      "bg": "#000",
+      "how": "Spot the little helicopter in the sky"
+    },
+    "astronaut": {
+      "name": "Astronaut",
+      "type": "Explorer",
+      "funFact": "The term “astronaut” derives from the Greek words meaning “star sailor.”",
+      "description": "The term “astronaut” refers to a person who has been trained for traveling in space.",
+      "image": "assets/cards/astronaut.jpg",
+      "fit": "cover",
+      "position": "50% 35%",
+      "bg": "#000",
+      "how": "Take care of your crew"
+    },
+    "laboratory": {
+      "name": "Laboratory",
+      "type": "Science",
+      "funFact": "Laboratories must follow strict safety protocols to prevent accidents and ensure the safety of everyone working there.",
+      "description": "A laboratory is a special place where scientists test ideas through experiments.",
+      "image": "assets/cards/laboratory.jpg",
+      "fit": "cover",
+      "bg": "#000",
+      "how": "Start a research project… or tap the lab"
+    },
+    "radiation": {
+      "name": "Radiation",
+      "type": "Danger",
+      "description": "Radiation is energy that moves from one place to another. Light, sound, heat, and X-rays are examples of radiation.",
+      "image": "assets/cards/radiation.jpg",
+      "fit": "contain",
+      "bg": "#fff",
+      "how": "Survive a solar flare with your crew"
+    },
+    "magnetic_shield": {
+      "name": "Magnetic Shield",
+      "type": "Physics",
+      "funFact": "Mars had one about 4 billion years ago, but it switched off. Traces remain in some rocks of its crust, like “magnetic fossils.”",
+      "description": "Mars has no strong magnetic shield around it. Because of this, a wind from the Sun slowly blows away the air of Mars. To live on Mars, we would need to build a shield to protect it!",
+      "image": "assets/cards/magnetic-field.jpg",
+      "fit": "cover",
+      "bg": "#000",
+      "how": "Build the regolith shield… or tap the shelter"
+    }
+  }
+}

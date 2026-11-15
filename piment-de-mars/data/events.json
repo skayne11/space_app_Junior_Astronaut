@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cme",
+    "houston": true,
+    "kind": "Plasma cloud (CME)",
+    "date": "May 10, 2024",
+    "isoDate": "2024-05-10",
+    "donkiType": "CME",
+    "src": "NASA DONKI (CME)",
+    "card": {
+      "title": "Plasma cloud!",
+      "text": "A cloud of particles from the Sun is coming. Quick: shelter 🛡️ and shutter!",
+      "src": "Real event · May 10, 2024 · NASA DONKI"
+    },
+    "toVerify": "Confirm date and text in DONKI (npm run donki) before submission."
+  },
+  {
+    "id": "x9",
+    "houston": false,
+    "kind": "X9.0 solar flare",
+    "date": "October 3, 2024",
+    "isoDate": "2024-10-03",
+    "donkiType": "FLR",
+    "src": "NASA DONKI (FLR)",
+    "card": {
+      "title": "X9 solar flare!",
+      "text": "One of the Sun's biggest flashes in recent years. Take shelter!",
+      "src": "Real event · October 3, 2024 · NASA DONKI"
+    },
+    "toVerify": "Confirm date and text in DONKI (npm run donki) before submission."
+  },
+  {
+    "id": "sep",
+    "houston": false,
+    "kind": "Particle shower",
+    "date": "May 20, 2024",
+    "isoDate": "2024-05-20",
+    "donkiType": "SEP",
+    "src": "NASA · Curiosity RAD · DONKI (SEP)",
+    "card": {
+      "title": "Particle shower!",
+      "text": "On this day, Curiosity measured its highest radiation dose on Mars. Take shelter!",
+      "src": "Real event · May 20, 2024 · Curiosity RAD"
+    },
+    "toVerify": "Confirm date and text in DONKI (npm run donki) before submission."
+  }
+]
